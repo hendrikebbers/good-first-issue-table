@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+</head>
+<body>
+<div class="min-h-full">
+  {{ partial "navbar.html" . }}
+  <div class="py-10">
+    <main>
+      <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+        {{ block "main" . }}
+        {{ end }}
+      </div>
+    </main>
+  </div>
+</div>
+</body>
+</html>
+
