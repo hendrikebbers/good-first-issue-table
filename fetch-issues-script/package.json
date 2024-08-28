@@ -1,0 +1,16 @@
+{
+  "name": "good-first-issue-table",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A project to fetch good first issues from GitHub repositories.",
+  "main": "index.js",
+  "scripts": {
+    "fetch-issues": "../node_modules/.bin/dotenvx run -- node fetch_issues.js",
+    "build": "npm run fetch-issues && hugo"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "@dotenvx/dotenvx": "^1.11.3",
+    "node-fetch": "^3.0.0"
+  }
+}
