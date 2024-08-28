@@ -1,0 +1,21 @@
+hallo
+
+{{ $issues := .Site.Data.goodFirstIssueCandidatesForHedera }}
+<table>
+    <thead>
+    <tr>
+        <th>Title</th>
+        <th>Repository</th>
+        <th>Link</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{ range $issues }}
+    <tr>
+        <td>{{ .title }}</td>
+        <td>{{ .repo }}</td>
+        <td><a href="{{ .url }}" target="_blank">View Issue</a></td>
+    </tr>
+    {{ end }}
+    </tbody>
+</table>

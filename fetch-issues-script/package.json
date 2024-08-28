@@ -5,7 +5,7 @@
   "description": "A project to fetch good first issues from GitHub repositories.",
   "main": "index.js",
   "scripts": {
-    "fetch-issues": "../node_modules/.bin/dotenvx run -- node fetch_issues.js",
+    "fetch-issues": "./node_modules/.bin/dotenvx run -- node fetch_issues.js",
     "build": "npm run fetch-issues && hugo"
   },
   "dependencies": {
